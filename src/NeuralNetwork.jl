@@ -2,6 +2,7 @@ module NeuralNetwork
 
 
 sigmoid(x) = 1.0 ./ (1.0 + exp(-x))
+sigmoidprime(x) = sigmoid(x) * (1.0 - sigmoid(x))
 
 immutable Network
 	Nlayers::Int64
