@@ -1,5 +1,6 @@
 module NeuralNetwork
 
+export Network, train!, feedforward
 
 sigmoid(x) = 1.0 ./ (1.0 + exp(-x))
 sigmoid_prime(x) = sigmoid(x) .* (1.0 - sigmoid(x))
